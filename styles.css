@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Dancing+Script:wght@400..700&display=swap');
+body {
+    background-image: url("./img/bai_bien.png");
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    font-family: "Bungee", sans-serif !important;
+    font-weight: 100 !important;
+    font-style: normal;
+}
+
+.content_info {
+    color: #8b212b;
+}
+.content_info p {
+    padding: 20px;
+    font-size: 5vw; /* Đơn vị phù hợp với mọi thiết bị */
+    font-weight: bolder;
+}
+
+#spinButton {
+    font-size: 5vh !important;
+}
+.content_title {
+    color: #8b212b;
+    font-size: 6vw; /* Đơn vị phù hợp với mọi thiết bị */
+}
+
+.content_logo img {
+    max-width: 14vw; /* Đơn vị phù hợp với mọi thiết bị */
+}
+
+#prizeName,
+#result {
+    font-size: 5vw; /* Đơn vị phù hợp với mọi thiết bị */
+    margin: 2vw 0; /* Đơn vị phù hợp với mọi thiết bị */
+    color: red; /* Màu chữ trắng */
+    
+}
+#prizeSelect{
+    color: blue;
+    border-radius: 5px;
+    background-color: aliceblue;
+    border-color: #8b212b;
+}
+.nut_bam {
+    position: absolute;
+    bottom: 5vw; /* Đơn vị phù hợp với mọi thiết bị */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw; /* Đơn vị phù hợp với mọi thiết bị */
+}
+
+.nut_bam button {
+    padding: 0;
+    width: 8vw; /* Đơn vị phù hợp với mọi thiết bị */
+    height: 8vw; /* Đơn vị phù hợp với mọi thiết bị */
+    border: none;
+    border-radius: 50% !important;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, font-size 0.3s;
+    box-shadow: 0 1vw 1.5vw rgba(0, 0, 0, 0.1); /* Đơn vị phù hợp với mọi thiết bị */
+    font-size: 4vw !important; /* Đơn vị phù hợp với mọi thiết bị */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    background-color: red;
+    box-shadow: 0 1.5vw 2vw rgba(0, 0, 0, 0.3); /* Đơn vị phù hợp với mọi thiết bị */
+    font-size: 1.2vw; /* Đơn vị phù hợp với mọi thiết bị */
+}
+
+/*chuc mung*/
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.congratulations {
+    color: white;
+    font-size: 1.2vw; /* Đơn vị phù hợp với mọi thiết bị */
+    text-align: center;
+    margin-bottom: 1vw; /* Đơn vị phù hợp với mọi thiết bị */
+}
+
+.fireworks img {
+    width: 100vw; /* Đơn vị phù hợp với mọi thiết bị */
+    height: auto;
+}
+
+/* trung giải */
+.modal-fullscreen {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+
+.modal-content-fullscreen {
+    height: 100%;
+    border-radius: 0;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: black;
+}
+
+.modal-body img {
+    width: 100%;
+    height: 100%;
+}
+
+#congratsMessage {
+    color: whitesmoke;
+    position: absolute;
+    font-size: 5vw; /* Đơn vị phù hợp với mọi thiết bị */
+    font-weight: 700;
+}
+
+#toggleMusicButton {
+    position: fixed;
+    bottom: 1vw; /* Đơn vị phù hợp với mọi thiết bị */
+    right: 1vw; /* Đơn vị phù hợp với mọi thiết bị */
+    z-index: 1000;
+}
+/* styles.css */
+.spin-button-active {
+    background-color: #8b212b !important; /* Chọn màu tùy ý bạn */
+    color: black; /* Chọn màu chữ tùy ý bạn */
+}
